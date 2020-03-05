@@ -12,21 +12,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F53C49D024114B5D00666B18 /* PBXContainerItemProxy */ = {
+		520F78692411818E0085EC00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F53C49C224114B2C00666B18 /* Sodium.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 09A943D21A4EB5F500C8A04F;
 			remoteInfo = SodiumTests;
 		};
-		F53C49D224114B5D00666B18 /* PBXContainerItemProxy */ = {
+		520F786B2411818E0085EC00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F53C49C224114B2C00666B18 /* Sodium.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 90C75E941AE3571900F1E749;
 			remoteInfo = Sodium_OSX;
 		};
-		F53C49D424114B7100666B18 /* PBXContainerItemProxy */ = {
+		520F786D241181A20085EC00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F53C49C224114B2C00666B18 /* Sodium.xcodeproj */;
 			proxyType = 1;
@@ -48,7 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F53C49C224114B2C00666B18 /* Sodium.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sodium.xcodeproj; path = "../swift-sodium/Sodium.xcodeproj"; sourceTree = "<group>"; };
+		F53C49C224114B2C00666B18 /* Sodium.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sodium.xcodeproj; path = "../../../../../../../../../Users/john/tmp/encrypt/swift-sodium/Sodium.xcodeproj"; sourceTree = SDKROOT; };
 		F5F80A1D2406B53B00071387 /* encrypt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encrypt; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F80A202406B53B00071387 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F5F80A312406BAC800071387 /* encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encrypt.swift; sourceTree = "<group>"; };
@@ -65,21 +65,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520F78652411818E0085EC00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				520F786A2411818E0085EC00 /* SodiumTests.xctest */,
+				520F786C2411818E0085EC00 /* Sodium.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F53C49CB24114B5600666B18 /* libsodium */ = {
 			isa = PBXGroup;
 			children = (
 				F53C49C224114B2C00666B18 /* Sodium.xcodeproj */,
 			);
 			path = libsodium;
-			sourceTree = "<group>";
-		};
-		F53C49CC24114B5D00666B18 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F53C49D124114B5D00666B18 /* SodiumTests.xctest */,
-				F53C49D324114B5D00666B18 /* Sodium.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F5F80A142406B53B00071387 = {
@@ -122,7 +122,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F53C49D524114B7100666B18 /* PBXTargetDependency */,
+				520F786E241181A20085EC00 /* PBXTargetDependency */,
 			);
 			name = encrypt;
 			productName = encrypt;
@@ -157,7 +157,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F53C49CC24114B5D00666B18 /* Products */;
+					ProductGroup = 520F78652411818E0085EC00 /* Products */;
 					ProjectRef = F53C49C224114B2C00666B18 /* Sodium.xcodeproj */;
 				},
 			);
@@ -169,18 +169,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F53C49D124114B5D00666B18 /* SodiumTests.xctest */ = {
+		520F786A2411818E0085EC00 /* SodiumTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SodiumTests.xctest;
-			remoteRef = F53C49D024114B5D00666B18 /* PBXContainerItemProxy */;
+			remoteRef = 520F78692411818E0085EC00 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F53C49D324114B5D00666B18 /* Sodium.framework */ = {
+		520F786C2411818E0085EC00 /* Sodium.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Sodium.framework;
-			remoteRef = F53C49D224114B5D00666B18 /* PBXContainerItemProxy */;
+			remoteRef = 520F786B2411818E0085EC00 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -198,10 +198,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F53C49D524114B7100666B18 /* PBXTargetDependency */ = {
+		520F786E241181A20085EC00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sodium_OSX;
-			targetProxy = F53C49D424114B7100666B18 /* PBXContainerItemProxy */;
+			targetProxy = 520F786D241181A20085EC00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
