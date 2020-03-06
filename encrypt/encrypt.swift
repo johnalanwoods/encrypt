@@ -127,11 +127,13 @@ class CryptoCore {
         var password:String? = String(validatingUTF8: UnsafePointer<CChar>(getpass("encrypt: enter password to derive encryption key:")))
 
         if(password != nil) {
-            let key = sodiumContext.pwHash.hash(outputLength: 32, passwd: password!.bytes, salt: salt, opsLimit: sodiumContext.pwHash.OpsLimitSensitive, memLimit: sodiumContext.pwHash.MemLimitSensitive)
+            var key = sodiumContext.pwHash.hash(outputLength: 32, passwd: password!.bytes, salt: salt, opsLimit: sodiumContext.pwHash.OpsLimitSensitive, memLimit: sodiumContext.pwHash.MemLimitSensitive)
             
             password = nil;
 
             var symmetricKey: SecretBox.Key = key!
+            sodiumContext.utils.zero(&key!)
+
             let encryptedBytes: Bytes = sodiumContext.secretBox.seal(message: self.fileProcessorContext.target!.bytes, secretKey: symmetricKey)!
             
             var outputData = encryptedBytes.data
@@ -163,7 +165,7 @@ class CryptoCore {
             var password:String? = String(validatingUTF8: UnsafePointer<CChar>(getpass("encrypt: enter password to derive decryption key:")))
 
             if(password != nil) {
-                let key = sodiumContext.pwHash.hash(outputLength: 32, passwd: password!.bytes, salt: salt, opsLimit: sodiumContext.pwHash.OpsLimitSensitive, memLimit: sodiumContext.pwHash.MemLimitSensitive)
+                var key = sodiumContext.pwHash.hash(outputLength: 32, passwd: password!.bytes, salt: salt, opsLimit: sodiumContext.pwHash.OpsLimitSensitive, memLimit: sodiumContext.pwHash.MemLimitSensitive)
                 
                 password = nil;
 
@@ -172,11 +174,15 @@ class CryptoCore {
                 var decrypted:Bytes? = sodiumContext.secretBox.open(nonceAndAuthenticatedCipherText: payload, secretKey: symmetricKey)
                 if(decrypted != nil) {
                     sodiumContext.utils.zero(&symmetricKey)
+                    sodiumContext.utils.zero(&key!)
+
                     self.fileProcessorContext.write(data: decrypted!.data, encrypted: false)
                     decrypted = nil
                     
                 } else {
                     sodiumContext.utils.zero(&symmetricKey)
+                    sodiumContext.utils.zero(&key!)
+
                     print("encrypt: could not decrypt, bad password or file")
                 }
             }

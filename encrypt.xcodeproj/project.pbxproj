@@ -322,6 +322,7 @@
 		F5F80A252406B53B00071387 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -335,6 +336,7 @@
 		F5F80A262406B53B00071387 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
