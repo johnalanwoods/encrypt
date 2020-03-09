@@ -12,23 +12,65 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		520F78692411818E0085EC00 /* PBXContainerItemProxy */ = {
+		F5804E1024167D4900880FD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F53C49C224114B2C00666B18 /* Sodium.xcodeproj */;
+			containerPortal = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09A943C71A4EB5F500C8A04F;
+			remoteInfo = Sodium_iOS;
+		};
+		F5804E1224167D4900880FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 09A943D21A4EB5F500C8A04F;
 			remoteInfo = SodiumTests;
 		};
-		520F786B2411818E0085EC00 /* PBXContainerItemProxy */ = {
+		F5804E1424167D4900880FD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F53C49C224114B2C00666B18 /* Sodium.xcodeproj */;
+			containerPortal = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 90C75E941AE3571900F1E749;
 			remoteInfo = Sodium_OSX;
 		};
-		520F786D241181A20085EC00 /* PBXContainerItemProxy */ = {
+		F5804E1624167D4900880FD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F53C49C224114B2C00666B18 /* Sodium.xcodeproj */;
+			containerPortal = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D891FE9421642CB40092AA84;
+			remoteInfo = Sodium_watchOS;
+		};
+		F5804E1824167D4900880FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 901644B61AE36EA700163E3E;
+			remoteInfo = "Example iOS";
+		};
+		F5804E1A24167D4900880FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 901644DC1AE36F2D00163E3E;
+			remoteInfo = "Example OSX";
+		};
+		F5804E1C24167D4900880FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D87D515521647597006D2C03;
+			remoteInfo = "Example Watch";
+		};
+		F5804E1E24167D4900880FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D87D516121647598006D2C03;
+			remoteInfo = "Example Watch Extension";
+		};
+		F5804E2024167D5700880FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 90C75E931AE3571900F1E749;
 			remoteInfo = Sodium_OSX;
@@ -48,7 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F53C49C224114B2C00666B18 /* Sodium.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sodium.xcodeproj; path = "../../../../../../../../../Users/john/tmp/encrypt/swift-sodium/Sodium.xcodeproj"; sourceTree = SDKROOT; };
+		F5804E0524167D4900880FD5 /* Sodium.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sodium.xcodeproj; path = "swift-sodium/Sodium.xcodeproj"; sourceTree = "<group>"; };
 		F5F80A1D2406B53B00071387 /* encrypt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encrypt; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F80A202406B53B00071387 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F5F80A312406BAC800071387 /* encrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encrypt.swift; sourceTree = "<group>"; };
@@ -65,28 +107,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		520F78652411818E0085EC00 /* Products */ = {
+		F5804E0624167D4900880FD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				520F786A2411818E0085EC00 /* SodiumTests.xctest */,
-				520F786C2411818E0085EC00 /* Sodium.framework */,
+				F5804E1124167D4900880FD5 /* Sodium.framework */,
+				F5804E1324167D4900880FD5 /* SodiumTests.xctest */,
+				F5804E1524167D4900880FD5 /* Sodium.framework */,
+				F5804E1724167D4900880FD5 /* Sodium.framework */,
+				F5804E1924167D4900880FD5 /* Example iOS.app */,
+				F5804E1B24167D4900880FD5 /* Example OSX.app */,
+				F5804E1D24167D4900880FD5 /* Example Watch.app */,
+				F5804E1F24167D4900880FD5 /* Example Watch Extension.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F53C49CB24114B5600666B18 /* libsodium */ = {
-			isa = PBXGroup;
-			children = (
-				F53C49C224114B2C00666B18 /* Sodium.xcodeproj */,
-			);
-			path = libsodium;
 			sourceTree = "<group>";
 		};
 		F5F80A142406B53B00071387 = {
 			isa = PBXGroup;
 			children = (
+				F5804E0524167D4900880FD5 /* Sodium.xcodeproj */,
 				F5F80A1F2406B53B00071387 /* encrypt */,
-				F53C49CB24114B5600666B18 /* libsodium */,
 				F5F80A1E2406B53B00071387 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,7 +162,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				520F786E241181A20085EC00 /* PBXTargetDependency */,
+				F5804E2124167D5700880FD5 /* PBXTargetDependency */,
 			);
 			name = encrypt;
 			productName = encrypt;
@@ -157,8 +197,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 520F78652411818E0085EC00 /* Products */;
-					ProjectRef = F53C49C224114B2C00666B18 /* Sodium.xcodeproj */;
+					ProductGroup = F5804E0624167D4900880FD5 /* Products */;
+					ProjectRef = F5804E0524167D4900880FD5 /* Sodium.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -169,18 +209,60 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		520F786A2411818E0085EC00 /* SodiumTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SodiumTests.xctest;
-			remoteRef = 520F78692411818E0085EC00 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		520F786C2411818E0085EC00 /* Sodium.framework */ = {
+		F5804E1124167D4900880FD5 /* Sodium.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Sodium.framework;
-			remoteRef = 520F786B2411818E0085EC00 /* PBXContainerItemProxy */;
+			remoteRef = F5804E1024167D4900880FD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5804E1324167D4900880FD5 /* SodiumTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SodiumTests.xctest;
+			remoteRef = F5804E1224167D4900880FD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5804E1524167D4900880FD5 /* Sodium.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Sodium.framework;
+			remoteRef = F5804E1424167D4900880FD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5804E1724167D4900880FD5 /* Sodium.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Sodium.framework;
+			remoteRef = F5804E1624167D4900880FD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5804E1924167D4900880FD5 /* Example iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Example iOS.app";
+			remoteRef = F5804E1824167D4900880FD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5804E1B24167D4900880FD5 /* Example OSX.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Example OSX.app";
+			remoteRef = F5804E1A24167D4900880FD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5804E1D24167D4900880FD5 /* Example Watch.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Example Watch.app";
+			remoteRef = F5804E1C24167D4900880FD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5804E1F24167D4900880FD5 /* Example Watch Extension.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = "Example Watch Extension.appex";
+			remoteRef = F5804E1E24167D4900880FD5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -198,10 +280,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		520F786E241181A20085EC00 /* PBXTargetDependency */ = {
+		F5804E2124167D5700880FD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sodium_OSX;
-			targetProxy = 520F786D241181A20085EC00 /* PBXContainerItemProxy */;
+			targetProxy = F5804E2024167D5700880FD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

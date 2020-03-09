@@ -64,17 +64,20 @@ class FileProcessor {
                     let potentialHash = Array<UInt8>(self.target?.bytes.suffix(from: (self.target?.bytes.count ?? 0)-32) ?? [])
                     if(potentialHash.data.hexEncodedString() == self.sodiumContext.genericHash.hash(message: Array<UInt8>(self.target?.bytes.prefix(upTo: self.target!.bytes.count-32) ?? []), outputLength: 32)!.data.hexEncodedString()) {
                         
-                        print("encrypt: encrypted data found, decrypting")
+                        print("encrypt: potential encrypted data found, attempting decrypt")
                         
+                        //drop hash
                         self.target = Array<UInt8>(self.target!.bytes.prefix(upTo: self.target!.bytes.count-32)).data
                         cryptoCore.dec()
                         
                     } else {
+                        //hash found but doesnt match
                         print("encrypt: unencrypted data found, encrypting")
                         cryptoCore.enc()
 
                     }
                 } else {
+                    //hash cannot be found, too small
                     print("encrypt: unencrypted data found, encrypting")
                     cryptoCore.enc()
 
@@ -158,7 +161,7 @@ class CryptoCore {
     
     
     func dec() -> () {
-        if(CommandLine.arguments.count == 2) {
+        if(self.fileProcessorContext.target!.bytes.count > 16) {
             let salt = Array(self.fileProcessorContext.target!.bytes.suffix(from: self.fileProcessorContext.target!.bytes.count-16))
             let payload = Array(self.fileProcessorContext.target!.bytes.prefix(upTo: self.fileProcessorContext.target!.bytes.count-16))
                 
@@ -190,7 +193,6 @@ class CryptoCore {
 
         }
         else {
-                print("encrypt - easy file (en/de)cryption.\n\nusage:\n./encrypt someFile\n\nencrypt will know if a file needs to be encrypted or decrypted automatically.\n\nencrypt uses 256-bit keys with salted Xsalsa20+Poly1305 & Argon2 password based key derivation")
-        }
+            print("encrypt: could not decrypt, bad password or file")        }
     }
 }

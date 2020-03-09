@@ -1,6 +1,451 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:../../../../swift-sodium"
+      name = "swift-sodium">
+      <FileRef
+         location = "group:LICENSE">
+      </FileRef>
+      <Group
+         location = "group:Tests"
+         name = "Tests">
+         <FileRef
+            location = "group:LinuxMain.swift">
+         </FileRef>
+         <Group
+            location = "group:SodiumTests"
+            name = "SodiumTests">
+            <FileRef
+               location = "group:SodiumTests.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ReadmeTests.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:Sodium.podspec">
+      </FileRef>
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+      <Group
+         location = "group:Examples"
+         name = "Examples">
+         <Group
+            location = "group:OSX"
+            name = "OSX">
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:MainMenu.xib">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Watch Extension"
+            name = "Watch Extension">
+            <FileRef
+               location = "group:InterfaceController.swift">
+            </FileRef>
+            <Group
+               location = "group:Assets.xcassets"
+               name = "Assets.xcassets">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ExtensionDelegate.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:iOS"
+            name = "iOS">
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Watch"
+            name = "Watch">
+            <Group
+               location = "group:Assets.xcassets"
+               name = "Assets.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:Interface.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:CommonCode"
+            name = "CommonCode">
+            <FileRef
+               location = "group:Helpers.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:Package.swift">
+      </FileRef>
+      <Group
+         location = "group:Sodium"
+         name = "Sodium">
+         <FileRef
+            location = "group:ExitCode.swift">
+         </FileRef>
+         <FileRef
+            location = "group:PWHash.swift">
+         </FileRef>
+         <FileRef
+            location = "group:SecretStream.swift">
+         </FileRef>
+         <FileRef
+            location = "group:KeyExchange.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Stream.swift">
+         </FileRef>
+         <FileRef
+            location = "group:ShortHash.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Auth.swift">
+         </FileRef>
+         <FileRef
+            location = "group:RandomBytes.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Box.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Sodium.swift">
+         </FileRef>
+         <Group
+            location = "group:libsodium"
+            name = "libsodium">
+            <FileRef
+               location = "group:crypto_stream_salsa2012.h">
+            </FileRef>
+            <FileRef
+               location = "group:sodium_lib.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_auth.h">
+            </FileRef>
+            <FileRef
+               location = "group:utils.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_core_hchacha20.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_hash_sha512.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_core_curve25519.h">
+            </FileRef>
+            <FileRef
+               location = "group:core.h">
+            </FileRef>
+            <FileRef
+               location = "group:version.h">
+            </FileRef>
+            <FileRef
+               location = "group:export.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_core_salsa20.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_shorthash_siphash24.h">
+            </FileRef>
+            <FileRef
+               location = "group:randombytes.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_hash_sha256.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_stream.h">
+            </FileRef>
+            <FileRef
+               location = "group:libsodium-osx.a">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_auth_hmacsha512.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_aead_xchacha20poly1305.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_stream_salsa20.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_onetimeauth_poly1305.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_scalarmult_ristretto255.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_kx.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_hash.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_sign.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_kdf.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_auth_hmacsha256.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_box.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_verify_32.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_core_ristretto255.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_stream_xchacha20.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_core_salsa208.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_auth_hmacsha512256.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_aead_chacha20poly1305.h">
+            </FileRef>
+            <FileRef
+               location = "group:randombytes_sysrandom.h">
+            </FileRef>
+            <FileRef
+               location = "group:runtime.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_stream_salsa208.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_aead_aes256gcm.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_core_salsa2012.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_secretbox_xchacha20poly1305.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_scalarmult.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_pwhash.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_verify_16.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_stream_chacha20.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_stream_xsalsa20.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_core_hsalsa20.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_kdf_blake2b.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_scalarmult_curve25519.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_shorthash.h">
+            </FileRef>
+            <FileRef
+               location = "group:libsodium-ios.a">
+            </FileRef>
+            <FileRef
+               location = "group:libsodium-watchos.a">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_pwhash_argon2id.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_secretstream_xchacha20poly1305.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_pwhash_scryptsalsa208sha256.h">
+            </FileRef>
+            <FileRef
+               location = "group:module.modulemap">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_sign_ed25519.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_onetimeauth.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_verify_64.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_box_curve25519xchacha20poly1305.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_core_ed25519.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_pwhash_argon2i.h">
+            </FileRef>
+            <FileRef
+               location = "group:randombytes_internal_random.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_generichash.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_secretbox_xsalsa20poly1305.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_secretbox.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_scalarmult_ed25519.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_box_curve25519xsalsa20poly1305.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_generichash_blake2b.h">
+            </FileRef>
+            <FileRef
+               location = "group:crypto_sign_edwards25519sha512batch.h">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Utils.swift">
+         </FileRef>
+         <Group
+            location = "group:Generators"
+            name = "Generators">
+            <FileRef
+               location = "group:KeyPairGenerator.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NonceGenerator.swift">
+            </FileRef>
+            <FileRef
+               location = "group:SecretKeyGenerator.swift">
+            </FileRef>
+            <FileRef
+               location = "group:KeyPairProtocol.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Aead.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Bytes.swift">
+         </FileRef>
+         <FileRef
+            location = "group:KeyDerivation.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Sodium.h">
+         </FileRef>
+         <FileRef
+            location = "group:GenericHash.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Sign.swift">
+         </FileRef>
+         <FileRef
+            location = "group:SecretBox.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Sodium.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "self:">
    </FileRef>
